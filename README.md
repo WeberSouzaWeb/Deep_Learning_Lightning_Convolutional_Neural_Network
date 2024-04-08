@@ -27,3 +27,19 @@ As CNNs são compostas por várias camadas, cada uma das quais realiza uma trans
 
 
 # O Que é Convolução?
+Convolução é uma operação matemática fundamental realizada em uma rede neural convolucional (CNN - Convolutional Neural Network). Na CNN, a convolução é aplicada em camadas específicas da rede, nas quais a entrada é convoluída com um conjunto de filtros para extrair recursos (features) relevantes. 
+A convolução é uma operação matemática que envolve a multiplicação de um pequeno filtro (kernel) em cada posição da entrada. O filtro é deslocado em etapas, geralmente chemadas de passos (stride), e o resultado da multiplicação é acumulado em uma matriz conhecida como mapa de características (feature map). O mapa de características é então passado para a próxima camada da rede.
+
+A convolução permite que a rede aprenda a detectar recursos em diferentes partes da entrada, como bordas, texturas, formas e padrões. Além disso, a aplicação de várias camadas de convolução em um rede pode permitir que ela extraia recursos cada vez mais complexos e abstratos, como objetos e cenas.
+
+Em resumo, a convolução é uma operaçãp matemática essencial em uma CNN, pois permite que a rede extraia recursos relevantes e aprenda a realizar tarefas como classificação de imagem, detecção de objetos, segmentação de imagem, entre outras.
+
+![image](https://github.com/WeberSouzaWeb/Deep_Learning_Lightning_Convolutional_Neural_Network/assets/107212929/c4b10081-4734-4660-ac13-d47104ec099f)
+
+A matemática da operação de convolução pode ser descrita como a sobreposição de um filtro (kernel) em uma matriz de entrada. O filtro é uma matriz menos que a matriz de entrada e geralmente é definido manualmente ou aprendido durante o treinamento da rede.
+
+  A operação de convolução é aplicada em todas as posições da matriz de entrada para gerar o mapa de características resultante. O tamanho do mapa de características pode ser controlado pelo tamanho do filtro, pelo número de canais de entrada e pelo número de filtros aplicados. 
+
+  Além disso, a operação de convolução pode ser estendida para trabalhar com várias camadas de entrada e vários canais de saída. Nesse caso, cada canal de saída é gerado pela convolução de um conjunto de filtros com os canais de entrada correspondentes, e os resultados são somados para formar o mapa de caractéristicas final. Uma das mais avançadas arquiteturas de Deep Learning é, de fato, um conjunto de operações com matrizes.
+
+  ## Max Pooling / Downsampling
