@@ -42,7 +42,7 @@ A matemática da operação de convolução pode ser descrita como a sobreposiç
 
   Além disso, a operação de convolução pode ser estendida para trabalhar com várias camadas de entrada e vários canais de saída. Nesse caso, cada canal de saída é gerado pela convolução de um conjunto de filtros com os canais de entrada correspondentes, e os resultados são somados para formar o mapa de caractéristicas final. Uma das mais avançadas arquiteturas de Deep Learning é, de fato, um conjunto de operações com matrizes.
 
-  ## Max Pooling / Downsampling
+## Max Pooling / Downsampling
   	Max pooling é uma técnica de downsampling (redução de dimensionalidade) comumente usada em redes neurais convolucionais (CNNs) para reduzir o tamanho dos mapas de características resultantes das camadas de convolução. O objetivo do max pooling é extrair informações importantes dos mapas de características, mantendo a robustez da rede a pequenas variações nas posições dos recursos detectados.
      A operação de max pooling é aplicada em cada mapa de características gerado pela convolução, dividindo a matriz em regiões e mantendo apenas o calor máximo de cada região. A região de pooling é geralmente definida por um filtro com um tamanho fixo e um passo (stride) correspondente. Durante a operação de max pooling, o filtro é aplicado à matriz de entrada, e o valor máximo em cada região é retido, enquanto os demais valores são descartados.
 
