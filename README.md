@@ -46,9 +46,9 @@ A matemática da operação de convolução pode ser descrita como a sobreposiç
  Max pooling é uma técnica de downsampling (redução de dimensionalidade) comumente usada em redes neurais convolucionais (CNNs) para reduzir o tamanho dos mapas de características resultantes das camadas de convolução. O objetivo do max pooling é extrair informações importantes dos mapas de características, mantendo a robustez da rede a pequenas variações nas posições dos recursos detectados.
   A operação de max pooling é aplicada em cada mapa de características gerado pela convolução, dividindo a matriz em regiões e mantendo apenas o calor máximo de cada região. A região de pooling é geralmente definida por um filtro com um tamanho fixo e um passo (stride) correspondente. Durante a operação de max pooling, o filtro é aplicado à matriz de entrada, e o valor máximo em cada região é retido, enquanto os demais valores são descartados.
 
-     ![image](https://github.com/WeberSouzaWeb/Deep_Learning_Lightning_Convolutional_Neural_Network/assets/107212929/43f60607-3c94-47b2-8735-04b8552eab24)
+![image](https://github.com/WeberSouzaWeb/Deep_Learning_Lightning_Convolutional_Neural_Network/assets/107212929/43f60607-3c94-47b2-8735-04b8552eab24)
 
-     O Max Pooling é util porque reduz a dimensão espacial do mapa de características, o que reduz a quantidade de parâmetros na rede e evita overfitting. Além disso, o maz pooling ajuda a tornar a rede mais invariante a pequenas variações dos recursos, o que pode melhorar o desempenho da rede em tarefas como detecção de objetos.
+  O Max Pooling é util porque reduz a dimensão espacial do mapa de características, o que reduz a quantidade de parâmetros na rede e evita overfitting. Além disso, o maz pooling ajuda a tornar a rede mais invariante a pequenas variações dos recursos, o que pode melhorar o desempenho da rede em tarefas como detecção de objetos.
 
 # Treinamento e Backpropagation
   O treinamento de uma rede neural convolucional (CNN) envolve o processo de ajustar os pesos e os viéses da rede para minimizar uma função de perda (loss) em um conjunto de dados de treinamento. O processo de ajuste dos pesos e dos viéses é realizado usando um algoritmo de otimização, como o gradiente descendente (gradient descent) ou suas variantes.
