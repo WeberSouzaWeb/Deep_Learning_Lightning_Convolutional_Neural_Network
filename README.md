@@ -50,5 +50,17 @@ A matemática da operação de convolução pode ser descrita como a sobreposiç
 
      O Max Pooling é util porque reduz a dimensão espacial do mapa de características, o que reduz a quantidade de parâmetros na rede e evita overfitting. Além disso, o maz pooling ajuda a tornar a rede mais invariante a pequenas variações dos recursos, o que pode melhorar o desempenho da rede em tarefas como detecção de objetos.
 
-# Por que usamos as Funções de Ativação?
+# Treinamento e Backpropagation
+  O treinamento de uma rede neural convolucional (CNN) envolve o processo de ajustar os pesos e os viéses da rede para minimizar uma função de perda (loss) em um conjunto de dados de treinamento. O processo de ajuste dos pesos e dos viéses é realizado usando um algoritmo de otimização, como o gradiente descendente (gradient descent) ou suas variantes.
+  O backpropagation é um algoritmo fundamental usado em CNNs para calcular os gradientes dos pesos e dos viéses da rede em relação à função de perda. O backpropagation é realizado por meio de uma propagação reversa dos erros a partir da camada de saída até a camada de entrada.
+  O processo de treinamento e backpropagation em CNNs pode ser resumido em cinco etapas:
+  1. Inicialização dos pesos e viéses: Os pesos e os viéses são inicializados aleatoriamente com uma distribuição gaussiana ou uniforme.
+  2. Propagação direta (forward pass): a entrada é passada pela rede em direção à saída, utilizando as operações de convolução, max pooling e funções de ativaçãopara gerar uma previsão da saída.
+  3. Cálculo da função de perda (loss function): a função de perda é calculada entre a previsão da saída e o valor real da saída
+  4. Backpropagation: o erro é propagado da camada de saída até a camada de entrada da rede, calculando os gradientes dos pesos e dos viéses em relação à função de perda
+  5. Atualização dos pesos e viéses: os pessos e os viéses são atualizados utilizando um algoritmo de otimização, como o gradiente descendente, que usa os gradientes calculados no passo 4 para ajustar os valores dos pesos e dos viéses.
+
+Esse processo é repetido iterativamente para minimizar a função de perda no conjunto de dados de treinamento. A CNN é avaliada periodicamente em conjunto de dados de validação para verificar se a rede está generalizando bem.
+
+O link traz a Matemática completa do Backpropagation: https://www.deeplearningbook.com.br/algoritmo-backpropagation-parte-2-treinamento-de-redes-neurais/
 
