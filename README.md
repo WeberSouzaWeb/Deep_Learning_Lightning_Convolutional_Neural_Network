@@ -64,3 +64,7 @@ Esse processo é repetido iterativamente para minimizar a função de perda no c
 
 O link traz a Matemática completa do Backpropagation: https://www.deeplearningbook.com.br/algoritmo-backpropagation-parte-2-treinamento-de-redes-neurais/
 
+
+Para este Projeto usaremos os dados que estão no link abaixo:
+https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000
+
