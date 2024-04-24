@@ -1,0 +1,16 @@
+# O que é Dataset Augmentation?
+
+  Dataset Augmentation é uma técnica de processamento de dados que envolve a criação de novas amostras de dados a partir das
+amostras existentes no conjunto de dados original. O objetivo dessa técnica é aumentar o tamanho do conjunto de dados para melhorar
+o desempenho de modelos de aprendizado de máquina, aumentando a variedade e diversidade dos dados de treinamento. A técnica também
+é usada para resolver problemas de desbalanceamento de classe.
+
+  Existe diversas técnicas de Dataset Augmentation que podem ser aplicadas, como por exemplo:
+  * Espelhamento horizontal: criação de novas imagens espelhando as imagens originais horizontalmente;
+  * Rotação: criação de novas imagens a partir de rotações das imagens originais;
+  * Translação: criação de novas imagens a partir de translação das imagens originais;
+  * Mudança de escala: criação de novas imagens a partir de alteração do tamanho das imagens originais;
+  * Adição de ruído: criação de novas imagens adicionando ruído às imagens originais.
+
+  Essas técnicas podem ser aplicadas em diferentes tipos de dados, como imagens, áudio, texto, entre outros. O resultado final é um 
+conjunto de dados maior e mais diversificado que pode levar a uma melhora no desempenho do modelo de aprendizado de máquina.
