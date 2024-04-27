@@ -1,0 +1,29 @@
+  A arquitetura Inception, também conhecida como GoogLeNet, é uma rede neural convolucional (CNN) desenvolvida pela Google em 2014.
+Essa arquitetura foi apresentada no paper "Going Deeper with Convolutions"por Christian Szegedy e colaboradores.
+
+  A principal inovação da arquitetura Inception é a capacidade de aprender recursos em diferentes escalas e abstrações em um único
+modelo, aumentando a eficiência e o desempenho em relação às CNNs tradicionais.
+
+  A arquitetura Inception é composta por vários módulos Incaption, que são a base para a construção de uma rede Inception completa. 
+Cada módulo Inception consiste em várias operações paralelas, que incluem:
+
+  Convolução 1x1: Aplica-se uma convolução com um filtro 1x1 para reduzir a dimensionalidade dos mapas de características, sem alterar
+a resolução espacial.
+
+  Convolução 3x3: Aplica-se uma convolução com um filtro 3x3 para capturar recursos em uma escala maior.
+
+  Convolução 3x3: Aplica-se uma convolução com um filtro 3x3 para capturar recursos em uma escala maior.
+
+  Pooling: Aplica-se uma operação de pooling máximo 3x3 para reduzir a resolução espacial e aumentar a robustez da rede.
+
+  Essas operações são executadas em paralelo e, em seguida, os resultados são concatenados ao longo do eixo do canal. Isso permite que
+a rede aprenda recursos em diferentes escalas e abstrações simultaneamente.
+  Além disso, as convoluções 1x1 ajudam a reduzir a dimensionalidade do modelo, diminuindo o número de parâmetros e, consequentemente, 
+o custo computacional.
+  A arquitetura Inception completa é formada por uma série de módulos Inception, intercalados com camadas de pooling e outras camadas 
+específicas, como Softmax e dropout. A rede termina com uma camada totalmente conectada e uma camada softmax para classificação.
+  O GoogLeNet, que é uma implementação da arquitetura Inception, venceu a competição ImageNet Large Scale Visual Recognition Challenge
+(ILSVRC) em 2014, estabelecendo um nobo padrão de desempenho em termos de precisão e eficiência na classificação de imagens.  
+  Desde então, várias versões atualizadas da arquitetura Inception foram desenvolvidas, incluindo Inception V2, Inception V3 e Inception-ResNet.
+
+  https://arxiv.org/abs/1409.4842
