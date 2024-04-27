@@ -1,0 +1,15 @@
+  A arquitetura ResNet, ou Rede Residual, é uma rede neural convolucional (CNN) desenvolvida por Kaiming He e colaboradores em 2015, no
+artigo "Deep Residual Learning for Image Recognition".
+
+  A inovação central da ResNet é o uso de conexões residuais, também chamadas de "atalhos" ou "skip connections", que permitem a criação
+de redes muito mais profundas sem sofrer com o problema do desaparecimento do gradiente. Isso resulta em melhorias significativas no desem-
+penho e na capacidade de generalização em camparação com as CNNs tradicionais.
+
+  A arquitetura ResNet é construída a partir de blocos residuais, que são a unidade básica da rede. Cada bloco residual consiste nas 
+seguintes camadas:
+
+  * Convolução:
+  * Batch Normalization: 
+  * Função de ativação: 
+
+https://arxiv.org/abs/1512.03385
