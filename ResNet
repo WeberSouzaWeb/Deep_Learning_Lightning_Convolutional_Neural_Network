@@ -8,8 +8,24 @@ penho e na capacidade de generalização em camparação com as CNNs tradicionai
   A arquitetura ResNet é construída a partir de blocos residuais, que são a unidade básica da rede. Cada bloco residual consiste nas 
 seguintes camadas:
 
-  * Convolução:
-  * Batch Normalization: 
-  * Função de ativação: 
+  * Convolução: Uma camada convolucional com filtro de tamanho 3x3 ou 1x1.
+  * Batch Normalization: Uma camada de normalização em lote para melhorar a estabilidade e o desempenho do treinamento
+  * Função de ativação: Uma função de ativação não linear, como o ReLU (Rectified Linear Unit)
+
+  Um bloco residual tem uma característica esperical: a entrada do bloco é somada à saída das camadas convolucionais antes de passar pela
+função de ativação. Essa conexão é chamada de "atalho" ou "skip connection" e permite que a rede aprenda a função de identidade, caso seja 
+ótimo para o modelo. Isso torna mais fácil para a rede aprender recursos adicionais em camadas mais profundas, sem perder os recursos já 
+aprendidos nas camadas anteriores.
+
+  A arquitetura ResNet completa consiste em várias dessas unidades residuais empilhadas, intercaladas com camadas de pooling e outras camadas
+específicas, como dropout e camadas totalmente conectadas. A rede termina com uma camada de pooling global média, seguida por uma camada 
+totalmente conectada e uma camada Softmax para classificação.
+
+  A ResNet alcançou um desempenho notável na competição ImageNet Large Scale Visual Recognition Challenge (ILSVRC) em 2015,
+vencendo a competição com uma margem significativa e estabelecendo um novo padrão em termos de precisão de classificação de imagens.
+
+  Desde então, diversas variantes da arquitetura ResNet, como ResNet-50, ResNet-101 e ResNet-152, foram desenvolvidas, deferindo principalmente
+no número de camadas ou blocos residuais. Essas redes profundas têm sido amplamente adotadas em diversas aplicações de visão computacional, como 
+reconhecimento de objetos, detecção e segmentação de objetos e análise de vídeo.
 
 https://arxiv.org/abs/1512.03385
