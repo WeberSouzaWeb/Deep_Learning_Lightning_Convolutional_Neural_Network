@@ -1,0 +1,30 @@
+  A arquitetura DenseNet, ou Rede Densa, é uma rede neural convolucional (CNN) proposta por Gao Huang e colaboradores em 2016, no artigo
+"Densely Connected Convolucional Networks".
+
+  A principal inovação da DenseNet é o uso de conexões densas entre as camadas, onde cada camada recebe a entrada de todas as camadas 
+anteriores. Essa abordagem melhora a eficiência em termos de parâmetros e a capacidade de generalização do modelo em comparação com as 
+CNNs tradicionais.
+
+  A arquitetura DenseNet é construída a partir de blocos densos e camadas de transição:
+
+  BLOCOS DENSOS: Cada bloco denso é composto por várias camadas convolucionais, intercaladas com camadas de normalização em lote 
+(Batch Normalization) e funções de ativação não lineares, como ReLU (Rectified Linear Unit). A saída de cada camada é concatenada com as 
+entradas de todas as camadas anteriores, criando uma conexão densa entre as camadas. Isso facilita o reaproveitamento de recursos e melhora
+o fluxo de informações e gradientes através da rede.
+
+  CAMADA DE TRANSIÇÃO: Entre os blocos densos são inseridas camadas de transição para reduzir a dimensionalidade dos mapas de características
+e controlar o crescimento do número de canais. Essas camadas geralmente consistem em uma convolução 1x1, seguida por uma camada de normalização
+em lote e uma camada de pooling (geralmente pooling médio 2x2). As camadas de transição ajudam a manter a eficiência computacional da rede.
+
+  A arquitetura DenseNet completa consiste em uma série de blocos densos e camadas de transição empilhados, com uma camada de convolução 
+inicial para processar a entrada. Após o último bloco denso, a rede geralmente inclui uma camada de normalização em lote, uma função de 
+ativação (ReLU) e uma camada de pooling global média. Por fim, a rede termina com uma camada totalmente conectada e uma camada Softmax
+para classificação.
+
+  A DenseNet obteve um excelente desempenho em várias tarefas de classificação de imagem e detecção de objetos, com eficiência em termos
+de parâmetros e desempenho competitivo em comparação com outras arquiteturas populares, como ResNet e Inception.
+
+  A DenseNet tem sido aplicada em uma ampla variedade de problemas de visão computacional, incluindo reconhecimento de objetos, segmentação
+semântica e análise de imagens médicas.
+
+https://arxiv.org/abs/1608.06993
