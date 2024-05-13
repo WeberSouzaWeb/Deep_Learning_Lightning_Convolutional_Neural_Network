@@ -68,3 +68,12 @@ O link traz a Matemática completa do Backpropagation: https://www.deeplearningb
 Para este Projeto usaremos os dados que estão no link abaixo:
 https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000
 
+Artigo original: "Going Deeper with Convolutions" (Szegedy et al., 2014)
+https://arxiv.org/abs/1409.4842
+
+Artigo original: "Deep Residual Learning for Image Recognition" (He et al., 2015)
+https://arxiv.org/abs/1512.03385
+
+Artigo original: "Densely Connected Convolutional Networks" (Huang et al., 2016)
+https://arxiv.org/abs/1608.06993
+
